@@ -11,6 +11,7 @@ router = DefaultRouter()
 urlpatterns = [
 	
     path("users/", UserList.as_view(), name="patient"),
+    
 
 ]
 
