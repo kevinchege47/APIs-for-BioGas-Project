@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 def sms(request):
     if request.method =='POST':
         username = "sandbox"    # use 'sandbox' for development in the test environment
-        api_key = "a337d4bb63bb4f1d65e8cc08371b2f69e8183e5ddf8a8ee2e54155a56d753152"      # use your sandbox app API key for development in the test environment
+        api_key = "cd1b2b77fdf97ee7196fa422561c42b315242e36cc849be769b93c934579377d"      # use your sandbox app API key for development in the test environment
         africastalking.initialize(username, api_key)
 
 
@@ -19,7 +19,7 @@ def sms(request):
         body = json.loads(body_unicode)
         content = body['phonenumber']
         # Use the service synchronously
-        # response = sms.send("Hello Message!", ["+254701020901"])
+        # response = sms.send("Hello Message!", [content])
         # print(response)
 
         # Or use it asynchronously
