@@ -1,0 +1,17 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ./Project
+    container_name: "backend"
+    networks:
+      - backend
+    volumes:
+      - ./Project:/Project
+    ports:
+     - "8000:8000"
+  
+networks:
+  backend:
+
+
