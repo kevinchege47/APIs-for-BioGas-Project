@@ -1,0 +1,30 @@
+# Server / Python
+**/*.egg-info
+**/.mypy_cache
+**/__pycache__
+**/.pytest_cache
+*.pyc
+# UI
+**/node_modules
+**/semantic
+**/.parcel-cache
+
+venv
+.env
+
+# Common
+server/.idea
+ui/.idea
+**/archive
+**/build
+**/.cache
+**/dist
+**/secret/*
+/secret/devcontainer.env.example
+.DS_Store
+tmp-*.py
+*.pem
+keys.json
+devcontainer.env
+svckey2.json
+svckey.json
