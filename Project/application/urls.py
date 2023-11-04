@@ -11,7 +11,8 @@ router = DefaultRouter()
 urlpatterns = [
 	
     path("users/", UserList.as_view(), name="patient"),
-    path("sms/",views.sms, name="sms")
+    path("sms/",views.sms, name="sms"),
+    path("stanbic/",views.stanbic, name="stanbic"),
 
 ]
 
